@@ -2,6 +2,13 @@ console.log('Hello World!');
 
 let globalUsers = [];
 
+setupPage();
+
+function setupPage() {
+    initGlobalUsers();
+    renderUsers();
+}
+
 function initGlobalUsers() {
     globalUsers.push({
         username : 'Jesper',
